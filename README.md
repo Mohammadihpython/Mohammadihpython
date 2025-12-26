@@ -1,24 +1,45 @@
 # Hi there 👋
 
-```python
-class SoftwareEngineer:
-    def __init__(self, languages: List[str], databases: List[str], tools: List[str]):
-        self.languages = languages
-        self.databases = databases
-        self.tools = tools
+```csharp
+public class SoftwareEngineer : BestEngineer
+{
+    public string BaseLanguage => "C#";
 
-Hamed_dev = SoftwareEngineer(
-    languages=["Python", "Go"],
-    databases=["PostgreSQL", "Redis", "MongoDB"],
-    tools=[
+    public IReadOnlyList<string> Languages { get; } = new List<string>
+    {
+        "C#",
+        "Python",
+        "Go"
+    };
+
+    public IReadOnlyList<string> Frameworks { get; } = new List<string>
+    {
+        "ASP.NET Core",
+        "FastAPI",
+        "Django",
+        "Echo"
+    };
+
+    public IReadOnlyList<string> Databases { get; } = new List<string>
+    {
+        "PostgreSQL",
+        "SQL Server,
+        "Redis",
+        "MongoDB"
+    };
+
+    public IReadOnlyList<string> Tools { get; } = new List<string>
+    {
+        "Docker",
         "Git",
         "GitHub",
-        "Docker",
         "Nginx",
-        "Elastic Search",         
-    ],
-)
+        "RabbitMQ",
+    };
+}
+
 ```
+
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/hamed-mohammadi80/) 
